@@ -33,6 +33,7 @@ In Python, a variable is a name attached to a piece of data. You first define a 
 '''
 
 # Initialize two string variables
+my_age = 29
 first_name = "John"
 last_name = "Doe"
 
@@ -63,7 +64,18 @@ print("Hi, my name is {} {}".format(first_name, last_name))
 # Then try concatenating it using the above four strategies.  
 
 
-print("-------------------------------------------------------------------------------\n")
+#print("-------------------------------------------------------------------------------\n")
+
+print("Hi, my name is " + first_name + " " + last_name + " " + str(my_age)+ "\n")
+
+print("Hi, my name is %s %s %s \n" % (first_name, last_name, my_age))
+
+print("Hi, my name is " + " ".join([first_name, last_name, str(my_age)]) +"\n")
+
+print("Hi, my name is {} {} {}\n".format(first_name, last_name, str(my_age)))
+
+
+
 
 '''
 Integers and floats are the two main kinds of numerical data types. An integer, or int, is a number with no decimal part. A float is a number with a decimal part.
@@ -143,24 +155,35 @@ while while_loop_index < 10:
 A nested loop is a loop inside another loop. Say you need a loop that examines every pixel in an image. You could write a loop that looks at each pixel in a row and, inside that loop, add a second loop that looks at every pixel in the current column for that row.
 '''
 #TODO: write a for loop to ONLY print even numbers
-
+for i in range(2,21,2):
+    print (i)
 
 
 #TODO: Declare an Array with mixed data types. i.e. string, number, boolean, etc. 
-# Iterate through this list using for loop and see the output. 
+# Iterate through this list using for loop and see the output.
+
+mixed=["dog", "cat", 4, 7, "nineteen", True, False, [1,2,3], {1:"one",2:"two"}]
+
+for i in mixed:
+    print(i)
 
 
+#TODO: Print the data type for each array item.
 
-#TODO: Print the data type for each array item. 
-
+for i in mixed:
+    print(type(i))
 
 
 # TODO: Reverse a String: input = hello, output = olleh
 
+print("hello"[::-1])
 
 
 # TODO: Reverse a number: input = 1234, output = 4321
 
+num=1234
+z=(str(num)[::-1])
+print(int(z))
 
 
 '''
@@ -218,8 +241,14 @@ for index, fruit in enumerate(my_list):
     print("index: %s =  %s " % (index, fruit))
 
 #TODO: Using a for loop update every item in the my_list list into dessert items
-# dessert = ["apple cake", "banana cake", "donut", "fudge", "ice cream", "jilapi"]
+dessert = ["apple cake", "banana cake", "donut", "fudge", "ice cream", "jilapi"]
 
+x=0
+for i in my_list:
+    dessert[x]=i
+    x+=1
+    
+print(dessert)
 
 
 print("-------------------- Dictionary ---------------------------------\n")
@@ -260,3 +289,18 @@ for key, value in country_capital_dict.items():
 #TODO: Create 5 lists of real life items and create 5 dictionaries. For example, 
 # for list, I would create a list for list of chores I need to do on weekends. i.e chores = ['laundry', 'pick-up mail', 'clean the apt']
 # for dictionary, I would have friends to phone number. friends = {'jose': '718-233-6464', 'ali': '646-232-2323'}
+
+hobbies = ["reading", "hiking", "gaming", "walking", "watching tv"]
+books = ['history','biographies','autobiographies','textbooks','romances']
+average_weight_in_lbs = [280,275,269,265,279]
+pets = ['Lewis','Clark','Gypsy']
+temp_past_wk_in_F = [45,32,29.5,26,33]
+
+bills = {'phone':100,'rent':500,'water':125,'phone':1000}
+food_status = {'milk':'fresh','veggies':'almost gone', 'eggs':7, 'bread':'stale'}
+contact_info = {'mom':'336-555-5555','dad':'485-555-5555','sister':'366-555-5555','wife':'317-555-5555','ER':'911'}
+room_colors = {'kitchen':'gray','library':'red','back_room':'bright_green','upstairs_bedroom':'pale_blue'}
+weather_this_week = {'Monday':'rainy','Tuesday':'rainy','Wednesday':'still_raining','Thursday':'Freezing_rain','Friday':'Just_plain_cold'}
+
+
+
