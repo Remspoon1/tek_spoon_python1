@@ -155,6 +155,7 @@ while while_loop_index < 10:
 A nested loop is a loop inside another loop. Say you need a loop that examines every pixel in an image. You could write a loop that looks at each pixel in a row and, inside that loop, add a second loop that looks at every pixel in the current column for that row.
 '''
 #TODO: write a for loop to ONLY print even numbers
+# In this exercise I chose to create a range of only even numbers but I realize I could have used mod % 2
 for i in range(2,21,2):
     print (i)
 
