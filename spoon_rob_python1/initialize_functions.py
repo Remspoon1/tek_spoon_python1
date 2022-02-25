@@ -72,13 +72,13 @@ print("------------ End of Function Initialization ---------------------\n\n")
 # Return type: Boolean 
 
 def palindrome(word):
-    if word[::-1]==word:
+    if word.lower()[::-1]==word.lower():
         return True
     else:
         return False
     
 # palindrome('frog')
-# palindrome('dad')
+# palindrome('Dad')
 
 
 '''
