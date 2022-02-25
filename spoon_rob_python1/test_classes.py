@@ -13,3 +13,16 @@ ar.print_self()
 
 #TODO: create several more instance of the Arithmetic class and add different values
 
+Bob = Arithmetic(8,4)
+
+Tom = Arithmetic(2,7)
+
+isFun = Arithmetic(10,20)
+
+isHard = Arithmetic(3,8)
+
+
+
+
+
+
