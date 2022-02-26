@@ -13,13 +13,25 @@ ar.print_self()
 
 #TODO: create several more instance of the Arithmetic class and add different values
 
-Bob = Arithmetic(8,4)
+bob = Arithmetic(8,4)
+print(bob.divide())
+print(bob.remainder())
+bob.print_self()
 
-Tom = Arithmetic(2,7)
+tom = Arithmetic(2,7)
+print(tom.add())
+print(tom.remainder())
+tom.print_self()
 
 isFun = Arithmetic(10,20)
+print(isFun.add())
+print(isFun.divide())
+print(isFun.remainder())
 
 isHard = Arithmetic(3,8)
+print(isHard.add())
+print(isHard.divide())
+isHard.print_self()
 
 
 
