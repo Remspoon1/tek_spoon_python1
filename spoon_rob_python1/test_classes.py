@@ -11,7 +11,7 @@ print(ar.divide())
 print(ar.remainder())
 ar.print_self()
 
-#TODO: create several more instance of the Arithmetic class and add different values
+#TODO: create several more instance of the Arithmetic class and add different values.
 
 bob = Arithmetic(8,4)
 print(bob.divide())
